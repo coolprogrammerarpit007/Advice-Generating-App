@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Manrope", sans-serif;
+}
+
+/* ******** End of css Boiler Plate ******* */
+
+/* Color Theme */
+/* ## Colors */
+
+/* ### Primary */
+
+/* - Light Cyan: hsl(193, 38%, 86%) */
+/* - Neon Green: hsl(150, 100%, 66%)
+
+### Neutral
+
+- Grayish Blue: hsl(217, 19%, 38%)
+- Dark Grayish Blue: hsl(217, 19%, 24%)
+- Dark Blue: hsl(218, 23%, 16%)
+
+## Typography
+
+### Body Copy
+
+- Font size (quote): 28px */
+
+/* End of css color theme */
+
+/* ****************************** */
+/* ****************************** */
+
+/* Advice Generator APP Style starts from here */
+
+body {
+  background-color: hsl(218, 23%, 16%);
+}
+
+/* Styling of the advice generator app starts from here */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advice-container {
+  background-color: hsl(217, 19%, 24%);
+  padding: 8.5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 50%;
+  position: relative;
+}
+
+.id {
+  letter-spacing: 0.3rem;
+  font-size: 1rem;
+  color: hsl(150, 100%, 66%);
+}
+
+.new-advice {
+  text-align: center;
+  width: 80%;
+  line-height: 1.5;
+}
+.new-advice p {
+  font-size: 2.5rem;
+  color: hsl(193, 38%, 86%);
+  word-wrap: break-word;
+  font-weight: bold;
+}
+
+.new-advice p::before {
+  content: '" ';
+}
+.new-advice p::after {
+  content: ' "';
+}
+
+/* Styling the stop button  */
+
+.stop-btn {
+  background-color: hsl(150, 100%, 66%);
+  padding: 2rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -3rem;
+  cursor: pointer;
+}
+
+/* Making App Responsive */
+
+@media (max-width: 786px) {
+  .advice-container {
+    width: 100%;
+  }
+}
